@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인 화면</title>
+    <title>Baby With Us</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>우리랑 아기랑</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Check With Us</a></li>
-            <li><a href="#">Talk With Us</a></li>
-            <li><a href="#">Record With Us</a></li>
-            <li><a href="#">Contact With Us</a></li>
-            <li><a href="#" >img_mypage</a></li>
-            <li><a href="#">img_logOut</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">우리랑 아기랑</a>
+        </div>
+        <div class="nav-links">
+            <a href="check.html">Check With Us</a>
+            <a href="talk.html">Talk With Us</a>
+            <a href="record.html">Record With Us</a>
+            <a href="contact.html">Contact With Us</a>
+            <span class="account-icon">👤</span>
+            <span class="logout-icon">🚪</span>
+        </div>
     </nav>
-</header>
-<main>
-    <section>
-        <h2>Hello!</h2>
-        <p>메인 화면</p>
-    </section>
-</main>
-<div>
-    <div class="baby_looks_like_bean">
-        <p>태명: "String"</p>
-        <p>D - "String"</p>
-<!--        <img src="img_baby_looks">-->
+
+    <div class="categories">
+        <div class="category baby" id="babyInfo">
+            <h2>또복이</h2>
+            <p>D - 189</p>
+            <p>신체에 중요한 장기들이 구체적으로 만들어지고 있어요!</p>
+        </div>
+        <div class="category mom" id="momInfo">
+            <h2>엄마랑</h2>
+            <p>Baby With Mom</p>
+            <img src="images/mom.png" alt="엄마 아이콘">
+        </div>
+        <div class="category dad" id="dadInfo">
+            <h2>아빠랑</h2>
+            <p>Baby With Dad</p>
+            <img src="images/dad.png" alt="아빠 아이콘">
+        </div>
     </div>
-</div>
-<footer>
-    <p>&copy; Baby With Us</p>
-</footer>
-<script src="js/scripts.js"></script>
+
+    <div class="content">
+        <div class="info yellow-info">신체에 중요한 장기들이 구체적으로 만들어지고 있어요!</div>
+        <div class="info pink-info">엄마와 아기의 소통 방법에 대해 알아보세요!</div>
+        <div class="info blue-info">아빠와의 유대감을 키우는 방법입니다!</div>
+    </div>
+
+    <footer>
+        <p>한국항공대학교 멋쟁이사자처럼 12기 천상천하 육아도움좀</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>

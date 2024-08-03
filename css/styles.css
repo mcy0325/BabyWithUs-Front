@@ -1,45 +1,101 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Jua", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
+    color: #333;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #543333;
 }
 
-.h1 {
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #543333;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.category {
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.baby {
+    background-color: #FFF6EB;
+}
+
+.mom {
+    background-color: #FCF1F1;
+}
+
+.dad {
+    background-color: #EBF3FF;
+}
+
+.category h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.category p {
+    color: #777;
+}
+
+.yellow {
+    background-color: #FFF6EB;
+}
+
+.pink {
+    background-color: #FCF1F1;
+}
+
+.blue {
+    background-color: #EBF3FF;
+}
+
+.info {
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.yellow-info {
+    background-color: #FFF6EB;
+}
+
+.pink-info {
+    background-color: #FCF1F1;
+}
+
+.blue-info {
+    background-color: #EBF3FF;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(180deg, #FBFAF6, #FFBD70);
+    position: relative;
+    bottom: 0;
+    color: #4B4B4B
 }
