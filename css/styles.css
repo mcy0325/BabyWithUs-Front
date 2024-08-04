@@ -1,96 +1,172 @@
-body {
-    font-family: "Jua", sans-serif;
+.body {
+    font-family: "Jua";
     margin: 0;
     padding: 0;
     background-color: #fff;
     color: #333;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     padding: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1087px;
+    margin-left: 140px;
 }
-
+.nav-links{
+    display: flex;
+    width: 600px;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    /*margin-right: 125px;*/
+}
+.logo{
+    /*margin-left: px;*/
+}
 .logo a {
     font-size: 24px;
     text-decoration: none;
     color: #543333;
 }
-
+.logo a1 {
+    margin-left: 11px;
+    font-size: 17px;
+    font-family: "Oleo Script Swash Caps", system-ui;
+}
+.p {
+    color: #F6BC72;
+}
+.account-icon{
+    width: 20px;
+    height: 20px;
+}
+.logout-icon{
+    width: 23px;
+    height: 23px;
+    margin-bottom: -1.5px;
+}
 .nav-links a {
-    margin: 0 10px;
+    font-size: 15px;
+    /*margin-left: 80px;*/
     text-decoration: none;
     color: #543333;
 }
-
+.nav-img{
+    margin-top: 9px;
+}
+.CWU{
+    margin-right: 250px;
+}
+.p1 {
+    font-family: "Jua";
+    font-size: 20px;
+}
+.category p {
+    font-family: "Oleo Script Swash Caps", system-ui;
+    color: #777;
+    width: 150px;
+    height: auto;
+}
+.orangeColoredAlaphabet{
+    color: #F6BC72;
+}
+/*-------------------여기까지 Navbar Css-----------------*/
+.mainContents{
+    margin-right: 150px;
+    margin-left: 160px;
+}
 .categories {
     display: flex;
-    justify-content: space-around;
     margin: 20px 0;
+    justify-content: space-around;
+    align-content: center;
 }
-
 .category {
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s;
+    justify-content: space-between;
 }
-
 .baby {
     background-color: #FFF6EB;
 }
-
 .mom {
+    display: flex;
+    align-content: center;
     background-color: #FCF1F1;
+    width: auto;
+    height: 170px;
+    /*flex-direction: row;*/
+    /*border-right-width: 20px;*/
 }
-
 .dad {
-    background-color: #EBF3FF;
+    display: flex;
+    align-content: center;
+    background-color: #FCF1F1;
+    width: auto;
+    height: 170px;
 }
-
+.dadsIcon{
+    height: 210px;
+    margin-right: 0;
+    /*margin-left: 300px;*/
+    margin-top: -20px;
+}
+.momsIcon{
+    height: 210px;
+    margin-right: 0;
+    /*margin-left: 300px;*/
+    margin-top: -20px;
+}
 .category h2 {
+    width: 70px;
+    height: auto;
     font-size: 20px;
     color: #333;
+    margin-top: -5px;
 }
-
+.p1 {
+    font-family: "Jua", sans-serif;
+    font-size: 20px;
+}
 .category p {
+    font-family: "Oleo Script Swash Caps", system-ui;
     color: #777;
+    width: 150px;
+    height: auto;
 }
-
+.orangeColoredAlaphabet{
+    color: #F6BC72;
+}
 .yellow {
     background-color: #FFF6EB;
 }
-
 .pink {
     background-color: #FCF1F1;
 }
-
 .blue {
     background-color: #EBF3FF;
 }
-
 .info {
     display: none;
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
 }
-
 .yellow-info {
     background-color: #FFF6EB;
 }
-
 .pink-info {
     background-color: #FCF1F1;
 }
-
 .blue-info {
     background-color: #EBF3FF;
 }
-
 footer {
     text-align: center;
     padding: 15px;
