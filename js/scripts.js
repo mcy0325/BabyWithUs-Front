@@ -21,3 +21,37 @@ function toggleContent(infoClass) {
         }
     });
 }
+
+// 카카오 SDK 초기화
+// 카카오 SDK 초기화
+Kakao.init('e286df7511b332b5d132d450cdc4cfc6'); // 발급받은 JavaScript 키
+
+document.getElementById('kakao-login-btn').addEventListener('click', function() {
+    Kakao.Auth.authorize({
+        redirectUri: 'http://localhost:8080/callback'
+    });
+});
+
+
+// 카카오 로그인 버튼 생성
+Kakao.Auth.createLoginButton({
+    container: '#kakao-login-btn',
+    success: function (authObj) {
+        // 인증 성공 시 백엔드로 인증 코드 전송
+        fetch('http://localhost:8080/auth/kakao/callback', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ code: authObj.code })
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                // 로그인 성공 후 처리
+            });
+    },
+    fail: function (err) {
+        console.error(err);
+    }
+});

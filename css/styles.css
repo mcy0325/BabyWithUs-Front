@@ -61,10 +61,7 @@ body {
 .CWU{
     margin-right: 250px;
 }
-.p1 {
-    font-family: "Jua";
-    font-size: 20px;
-}
+
 .category p {
     font-family: "Oleo Script Swash Caps", system-ui;
     color: #777;
@@ -107,7 +104,7 @@ body {
 .dad {
     display: flex;
     align-content: center;
-    background-color: #FCF1F1;
+    background-color: #EBF3FF;
     width: auto;
     height: 170px;
 }
@@ -127,7 +124,7 @@ body {
     width: 70px;
     height: auto;
     font-size: 20px;
-    color: #333;
+    color: #543333;
     margin-top: -5px;
 }
 .p1 {
@@ -136,7 +133,7 @@ body {
 }
 .category p {
     font-family: "Oleo Script Swash Caps", system-ui;
-    color: #777;
+    color: #543333;
     width: 150px;
     height: auto;
 }
