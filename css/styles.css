@@ -13,19 +13,17 @@ body {
     padding: 20px;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 1087px;
+    /*width: 1087px;*/
     margin-left: 140px;
+    margin-right: 140px;
 }
 .nav-links{
     display: flex;
-    width: 600px;
+    /*width: 700px;*/
     align-content: center;
     justify-content: space-between;
     flex-direction: row;
     /*margin-right: 125px;*/
-}
-.logo{
-    /*margin-left: px;*/
 }
 .logo a {
     font-size: 24px;
@@ -74,8 +72,46 @@ body {
 .orangeColoredAlaphabet{
     color: #F6BC72;
 }
-.check{
-    margin-left: -150px;
+.menus{
+    width: 800px;
+    justify-content: space-around;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.check {
+    width: 130px;
+    padding-left: 120px;
+}
+.talk{
+    width: 130px;
+}
+.record{
+    width: 130px;
+}
+.contact{
+    width: 130px;
+}
+.nav-img{
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 22px;
+    margin-left: -30px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(180deg, #FBFAF6, #FFBD70);
+    position: absolute;
+    bottom: 0px;
+    color: #4B4B4B;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 97.77%;
 }
 /*-------------------여기까지 Navbar Css-----------------*/
 .mainContents{
@@ -85,7 +121,7 @@ body {
 .categories {
     display: flex;
     margin: 20px 0;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
 }
 .category {
@@ -110,21 +146,21 @@ body {
 .dad {
     display: flex;
     align-content: center;
-    background-color: #FCF1F1;
+    background-color: #EBF3FF;
     width: auto;
     height: 170px;
 }
 .dadsIcon{
-    height: 210px;
+    height: 230px;
     margin-right: 0;
     /*margin-left: 300px;*/
-    margin-top: -20px;
+    margin-top: -30px;
 }
 .momsIcon{
-    height: 210px;
+    height: 230px;
     margin-right: 0;
     /*margin-left: 300px;*/
-    margin-top: -20px;
+    margin-top: -30px;
 }
 .category h2 {
     width: 70px;
@@ -159,7 +195,7 @@ body {
     display: none;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 20px 150px 20px 160px;
 }
 .yellow-info {
     background-color: #FFF6EB;
@@ -169,12 +205,4 @@ body {
 }
 .blue-info {
     background-color: #EBF3FF;
-}
-footer {
-    text-align: center;
-    padding: 15px;
-    background: linear-gradient(180deg, #FBFAF6, #FFBD70);
-    position: relative;
-    bottom: 0;
-    color: #4B4B4B
 }
