@@ -45,9 +45,9 @@ body {
     height: 20px;
 }
 .logout-icon{
-    width: 23px;
-    height: 23px;
-    margin-bottom: -1.5px;
+    width: 21px;
+    height: 21px;
+    margin-bottom: -0.5px;
 }
 .nav-links a {
     font-size: 15px;
@@ -58,7 +58,7 @@ body {
 .nav-img{
     margin-top: 9px;
 }
-.CWU{
+.contact{
     margin-right: 250px;
 }
 .p1 {
@@ -73,6 +73,9 @@ body {
 }
 .orangeColoredAlaphabet{
     color: #F6BC72;
+}
+.check{
+    margin-left: -150px;
 }
 /*-------------------여기까지 Navbar Css-----------------*/
 .mainContents{
