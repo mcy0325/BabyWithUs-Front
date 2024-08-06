@@ -7,9 +7,6 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     fetch('https://www.babywithus-server.o-r.kr/login', {
         method: 'POST',
         body: formData,
-        headers: {
-            'Content-Type': 'application/json'
-        }
     })
         .then(response => {
             if (!response.ok) {
