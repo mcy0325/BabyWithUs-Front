@@ -13,19 +13,18 @@ body {
     padding: 20px;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 1087px;
+    /*width: 1087px;*/
     margin-left: 140px;
+    margin-right: 140px;
 }
 .nav-links{
+    margin-top: -7px;
     display: flex;
-    width: 600px;
+    /*width: 700px;*/
     align-content: center;
     justify-content: space-between;
     flex-direction: row;
     /*margin-right: 125px;*/
-}
-.logo{
-    /*margin-left: px;*/
 }
 .logo a {
     font-size: 24px;
@@ -45,9 +44,9 @@ body {
     height: 20px;
 }
 .logout-icon{
-    width: 23px;
-    height: 23px;
-    margin-bottom: -1.5px;
+    width: 21px;
+    height: 21px;
+    margin-bottom: -0.5px;
 }
 .nav-links a {
     font-size: 15px;
@@ -58,11 +57,11 @@ body {
 .nav-img{
     margin-top: 9px;
 }
-.CWU{
+.contact{
     margin-right: 250px;
 }
 .p1 {
-    font-family: "Jua", sans-serif;
+    font-family: "Jua";
     font-size: 20px;
 }
 .category p {
@@ -74,4 +73,45 @@ body {
 .orangeColoredAlaphabet{
     color: #F6BC72;
 }
-/*-------------------여기까지 Navbar Css-----------------*/
+.menus{
+    width: 800px;
+    justify-content: space-around;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.check {
+    width: 130px;
+    padding-left: 120px;
+}
+.talk{
+    width: 130px;
+}
+.record{
+    width: 130px;
+}
+.contact{
+    width: 130px;
+}
+.nav-img{
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 22px;
+    margin-left: -30px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(180deg, #FBFAF6, #FFBD70);
+    color: #4B4B4B;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 97.77%;
+    position: relative;
+    bottom: 0;
+}
+/*-------------------여기까지 navbar & footer Css-----------------*/
