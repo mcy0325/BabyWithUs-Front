@@ -12,20 +12,20 @@ body {
     background-color: #fff;
     padding: 20px;
     flex-direction: row;
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap;*/
     /*width: 1087px;*/
     margin-left: 140px;
     margin-right: 140px;
 }
-.nav-links{
-    margin-top: -7px;
-    display: flex;
-    /*width: 700px;*/
-    align-content: center;
-    justify-content: space-between;
-    flex-direction: row;
-    /*margin-right: 125px;*/
-}
+/*.nav-links{*/
+/*    margin-top: -7px;*/
+/*    display: flex;*/
+/*    !*width: 700px;*!*/
+/*    align-content: center;*/
+/*    justify-content: space-between;*/
+/*    flex-direction: row;*/
+/*    !*margin-right: 125px;*!*/
+/*}*/
 .logo a {
     font-size: 24px;
     text-decoration: none;
@@ -57,11 +57,11 @@ body {
 .nav-img{
     margin-top: 9px;
 }
-.contact{
-    margin-right: 250px;
-}
+/*.contact{*/
+/*    margin-right: 250px;*/
+/*}*/
 .p1 {
-    font-family: "Jua";
+    font-family: "Jua", sans-serif;
     font-size: 20px;
 }
 .category p {
@@ -74,32 +74,35 @@ body {
     color: #F6BC72;
 }
 .menus{
-    width: 800px;
-    justify-content: space-around;
+    padding-left: 50px;
+    width: auto;
+    justify-content: space-between;
     align-content: center;
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
+.menus a{
+    text-decoration: none;
+}
 .check {
-    width: 130px;
-    padding-left: 120px;
+    width: 230px;
 }
 .talk{
-    width: 130px;
+    width: 230px;
 }
 .record{
-    width: 130px;
+    width: 230px;
 }
 .contact{
-    width: 130px;
+    width: 230px;
 }
 .nav-img{
     justify-content: space-between;
     align-content: center;
     display: flex;
     flex-direction: row;
-    margin-top: 22px;
+    margin-top: 12px;
     margin-left: -30px;
 }
 footer {
@@ -147,7 +150,7 @@ footer {
     display: flex;
     align-content: center;
     background-color: #FCF1F1;
-    width: auto;
+    width: 550px;
     height: 170px;
     /*flex-direction: row;*/
     /*border-right-width: 20px;*/
@@ -156,7 +159,7 @@ footer {
     display: flex;
     align-content: center;
     background-color: #EBF3FF;
-    width: auto;
+    width: 550px;
     height: 170px;
 }
 .dadsIcon{
