@@ -18,7 +18,6 @@ body {
     margin-right: 140px;
 }
 .nav-links{
-    margin-top: -7px;
     display: flex;
     /*width: 700px;*/
     align-content: center;
@@ -106,15 +105,15 @@ footer {
     text-align: center;
     padding: 15px;
     background: linear-gradient(180deg, #FBFAF6, #FFBD70);
+    position: absolute;
+    bottom: 0px;
     color: #4B4B4B;
     display: flex;
     justify-content: center;
     align-content: center;
     width: 97.77%;
-    position: relative;
-    bottom: 0;
 }
-/*-------------------여기까지 navbar & footer Css-----------------*/
+/*-------------------여기까지 Navbar Css-----------------*/
 .mainContents{
     margin-right: 150px;
     margin-left: 160px;
@@ -134,14 +133,6 @@ footer {
 }
 .baby {
     background-color: #FFF6EB;
-    display: flex;
-    flex-direction: column;
-}
-.baby-img{
-    width: 150px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-top: -90px;
 }
 .mom {
     display: flex;
@@ -181,7 +172,6 @@ footer {
 .p1 {
     font-family: "Jua", sans-serif;
     font-size: 20px;
-    width: 150px;
 }
 .category p {
     font-family: "Oleo Script Swash Caps", system-ui;
