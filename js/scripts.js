@@ -1,12 +1,12 @@
-document.getElementById('babyInfo').addEventListener('click', function() {
+document.getElementById('babyInfo').addEventListener('click', function () {
     toggleContent('yellow-info');
 });
 
-document.getElementById('momInfo').addEventListener('click', function() {
+document.getElementById('momInfo').addEventListener('click', function () {
     toggleContent('pink-info');
 });
 
-document.getElementById('dadInfo').addEventListener('click', function() {
+document.getElementById('dadInfo').addEventListener('click', function () {
     toggleContent('blue-info');
 });
 
@@ -23,10 +23,9 @@ function toggleContent(infoClass) {
 }
 
 // 카카오 SDK 초기화
-// 카카오 SDK 초기화
 Kakao.init('e286df7511b332b5d132d450cdc4cfc6'); // 발급받은 JavaScript 키
 
-document.getElementById('kakao-login-btn').addEventListener('click', function() {
+document.getElementById('kakao-login-btn').addEventListener('click', function () {
     Kakao.Auth.authorize({
         redirectUri: 'http://localhost:8080/callback'
     });
@@ -43,7 +42,7 @@ Kakao.Auth.createLoginButton({
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ code: authObj.code })
+            body: JSON.stringify({code: authObj.code})
         })
             .then(response => response.json())
             .then(data => {
@@ -55,3 +54,27 @@ Kakao.Auth.createLoginButton({
         console.error(err);
     }
 });
+
+function updateNavUI() {
+    var navImgDiv = document.getElementById('nav-img');
+    var isLoggedIn = localStorage.getItem('isLoggedIn');
+
+    if (isLoggedIn === 'true') {
+        navImgDiv.innerHTML = `
+            <img src="../images/mypage.png" class="account-icon">
+            <img src="../images/logout.png" class="logout-icon" style="margin-left: 30px" onclick="logout()">
+        `;
+    } else {
+        navImgDiv.innerHTML = `<img src="../images/login.png" class="login-icon" onclick="login()">`;
+    }
+}
+
+function logout() {
+    localStorage.removeItem('isLoggedIn');
+    window.location.reload();
+}
+
+function login() {
+    localStorage.setItem('isLoggedIn', 'true');
+    window.location.reload();
+}
