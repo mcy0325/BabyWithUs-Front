@@ -55,26 +55,3 @@ Kakao.Auth.createLoginButton({
     }
 });
 
-function updateNavUI() {
-    var navImgDiv = document.getElementById('nav-img');
-    var isLoggedIn = localStorage.getItem('isLoggedIn');
-
-    if (isLoggedIn === 'true') {
-        navImgDiv.innerHTML = `
-            <img src="../images/mypage.png" class="account-icon">
-            <img src="../images/logout.png" class="logout-icon" style="margin-left: 30px" onclick="logout()">
-        `;
-    } else {
-        navImgDiv.innerHTML = `<img src="../images/login.png" class="login-icon" onclick="login()">`;
-    }
-}
-
-function logout() {
-    localStorage.removeItem('isLoggedIn');
-    window.location.reload();
-}
-
-function login() {
-    localStorage.setItem('isLoggedIn', 'true');
-    window.location.reload();
-}
