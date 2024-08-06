@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>로그인</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<div id="container">
+    <div class="logo">
+        <span class="orangeColoredAlaphabet">우리</span>랑 <span class="orangeColoredAlaphabet">아기</span>랑<br>
+        <span class="orangeColoredAlaphabet">B</span>aby <span class="orangeColoredAlaphabet">W</span>ith <span class="orangeColoredAlaphabet">U</span>s
+    </div>
+    <form id="login-form">
+        <label for="username">아이디</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">로그인</button>
+        <button type="button">회원가입</button>
+    </form>
+    <div id="responseMessage"></div>
+</div>
+<script src="../js/login.js"></script>
 </body>
 </html>
