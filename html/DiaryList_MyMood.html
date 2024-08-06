@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="../../../BabyWithUs_Diary/css/DiaryList_MyMood.css" rel="stylesheet">
+    <link href="../css/DiaryList_MyMood.css" rel="stylesheet">
 </head>
 <body>
 <div class="main">
@@ -12,7 +12,7 @@
         <div class="a_buttons">
             <button class="ViewOption">
                 VIEW OPTION
-                <img class="ViewOption_img" src="../../../BabyWithUs_Diary/img/gear-fill.png">
+                <img class="ViewOption_img" src="../images/gear.png">
             </button>
             <button class="WriteDiary">일기 작성하기</button>
         </div>
@@ -113,14 +113,14 @@
 <!--커스텀 태그 제작-->
 
 <template id="cal_clicked_temp">
-    <link href="../../../BabyWithUs_Diary/css/DiaryList_MyMood.css" rel="stylesheet">
+    <link href="../css/DiaryList_MyMood.css" rel="stylesheet">
     <div class="cal_clicked_back">
         <div class="cal_date"><slot class="cal_clicked_font"></slot></div>
         <svg class="cal_svg"><circle class="cal_circle" r="3"></circle></svg>
     </div>
 </template>
 <template id="cal_noneclicked_temp">
-    <link href="../../../BabyWithUs_Diary/css/DiaryList_MyMood.css" rel="stylesheet">
+    <link href="../css/DiaryList_MyMood.css" rel="stylesheet">
     <div class="cal_noneclicked_back">
         <div class="cal_date"><slot class="cal_noneclicked_font"></slot></div>
         <svg class="cal_svg"><circle class="cal_circle" r="3"></circle></svg>
