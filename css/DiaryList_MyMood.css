@@ -6,7 +6,127 @@
     font-style: normal;
 }
 
-
+body {
+    font-family: "Jua", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    flex-direction: row;
+    /*flex-wrap: nowrap;*/
+    /*width: 1087px;*/
+    margin-left: 140px;
+    margin-right: 140px;
+}
+/*.nav-links{*/
+/*    margin-top: -7px;*/
+/*    display: flex;*/
+/*    !*width: 700px;*!*/
+/*    align-content: center;*/
+/*    justify-content: space-between;*/
+/*    flex-direction: row;*/
+/*    !*margin-right: 125px;*!*/
+/*}*/
+.logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #543333;
+}
+.logo a1 {
+    margin-left: 11px;
+    font-size: 17px;
+    font-family: "Oleo Script Swash Caps", system-ui;
+}
+.p {
+    color: #F6BC72;
+}
+.account-icon{
+    width: 20px;
+    height: 20px;
+}
+.logout-icon{
+    width: 21px;
+    height: 21px;
+    margin-bottom: -0.5px;
+}
+.nav-links a {
+    font-size: 15px;
+    /*margin-left: 80px;*/
+    text-decoration: none;
+    color: #543333;
+}
+.nav-img{
+    margin-top: 9px;
+}
+/*.contact{*/
+/*    margin-right: 250px;*/
+/*}*/
+.p1 {
+    font-family: "Jua", sans-serif;
+    font-size: 20px;
+}
+.category p {
+    font-family: "Oleo Script Swash Caps", system-ui;
+    color: #777;
+    width: 150px;
+    height: auto;
+}
+.orangeColoredAlaphabet{
+    color: #F6BC72;
+}
+.menus{
+    padding-left: 50px;
+    width: auto;
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.menus a{
+    text-decoration: none;
+    color: inherit;
+}
+.check {
+    width: 230px;
+}
+.talk{
+    width: 230px;
+}
+.record{
+    width: 230px;
+}
+.contact{
+    width: 230px;
+}
+.nav-img{
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-left: -30px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(180deg, #FBFAF6, #FFBD70);
+    color: #4B4B4B;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 97.77%;
+    position: relative;
+    bottom: 0;
+}
+/*-------------------여기까지 navbar & footer Css-----------------*/
 :root{
     --color-main-orange: #f6bc72;
     --color-main-brown: #543333;
