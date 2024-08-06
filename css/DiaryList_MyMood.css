@@ -1,0 +1,207 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-style: normal;
+}
+
+
+:root{
+    --color-main-orange: #f6bc72;
+    --color-main-brown: #543333;
+    --color-main-gray: #cdcdcd;
+    --corlor-main-black: #000000;
+}
+
+.main{
+    display: block;
+
+}
+
+.a{
+    width: 855px;
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.MyDiaryList_txt{
+    margin-left: 10px;
+    font-family: Pretendard Variable;
+    font-weight: 900;
+    font-size: 24px;
+    margin: 0;
+}
+
+.a_buttons{
+    display: flex;
+    margin-right: 10px;
+    margin-left: auto;
+    justify-items: flex-end;
+    align-items: center;
+}
+
+.ViewOption{
+    margin-right: 20px;
+    font-family: Pretendard Variable;
+    font-weight: 600;
+    font-size: 16px;
+    background-color:transparent;
+    border: 0;
+    height: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.WriteDiary{
+    font-family: Pretendard Variable;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--corlor-main-black);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 102px;
+    height: 27px;
+}
+
+.b{
+    display: flex;
+}
+
+.DiaryBox{
+    width: 855px;
+    height: 798px;
+    margin: 0 auto;
+    display: block;
+    flex-wrap: wrap;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.DiaryBox::-webkit-scrollbar{
+    width: 10px;
+}
+.DiaryBox::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: var(--color-main-orange);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.DiaryBox::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Listhead{
+    display: flex;
+    height: 24px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.DiaryRaw{
+    display: flex;
+    width: 851px;
+    height: 189px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+
+.Day{
+    display: block;
+}
+
+.Date1{
+    font-family: Pretendard Variable;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--color-main-brown);
+    margin: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.Date2{
+    font-family: Pretendard Variable;
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--color-main-brown);
+    margin: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.Diary{
+    width: 650px;
+    font-family: Pretendard Variable;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 32px;
+}
+
+.MonthController{
+    position: absolute;
+    left: calc(50% + 50px + 428px);
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.TriSvg{
+    width: 18px;
+    height: 18px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.Tri{
+    fill: var(--color-main-brown);
+}
+
+.Present{
+    display: flex;
+}
+
+.PrevMonth{
+    font-family: Pretendard Variable;
+    font-weight: 800;
+    font-size: 36px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: var(--color-main-gray);
+}
+
+.PresentMonth{
+    font-family: Pretendard Variable;
+    font-weight: 800;
+    font-size: 48px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: var(--color-main-brown);
+}
+
+.Month_txt{
+    font-family: Pretendard Variable;
+    font-weight: 800;
+    font-size: 48px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: var(--color-main-brown);
+}
+
+.NextMonth{
+    font-family: Pretendard Variable;
+    font-weight: 800;
+    font-size: 36px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: var(--color-main-gray);
+}
