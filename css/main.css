@@ -260,3 +260,13 @@ footer {
     color: #4B4B4B;
     font-weight: lighter;
 }
+.Mom_info{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.Mom_info_body{
+    padding: 0px 240px 10px 0px;
+    font-size: 20px;
+    color: #4B4B4B;
+    font-weight: lighter;
+}
